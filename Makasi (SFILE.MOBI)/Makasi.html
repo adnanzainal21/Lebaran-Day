@@ -1,0 +1,77 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-material-ui/material-ui.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"><link href="https://makasi.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://makasi.likeadream.repl.co/script.js"></script>
+<head>
+
+
+</head>
+<body>
+<div id="bodyblur"><img src="https://i.postimg.cc/rsRhg1vj/FB-IMG-1640842147380.jpg" width="100%" height="100%"/></div></div>
+
+<div id="konten">
+
+<p class='catatan' data-text='&#9829;' id='koteks'>
+<span id="text"></span><br>
+</p>
+
+</div>
+
+<script>
+var i=0,text;text = "Sesingkat apapun kisahnya, perihal melupakan dan melepaskan bukanlah hal yang mudah.";
+
+function play() {
+var audio = new Audio('https://bukadulu.likeadream.repl.co/Dandelions.mp3');audio.play();}         
+
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                backdrop: 'rgba(0,0,0,0.4)', allowOutsideClick: false,
+            });    
+            async function mulai(){
+                 await swals.fire('Hai kamu,');
+                 await swals.fire('Makasi udah pernah hadir, ya :)');
+                 await swals.fire('Mungkin Aku memang tak pantas untukmu,');
+                 await swals.fire('Maaf ツ');                
+                 play();ketik();expl();
+            }            
+            mulai();          
+</script>
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>  
+  async function expl(){document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setInterval(createHeart,200);setTimeout(duar,200);}
+  
+async function duar(){
+document.getElementById('konten').style.top = "35vh";document.getElementById('koteks').style.opacity = "1";
+document.body.style.backgroundColor = "#000";
+}
+
+   function ketik() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(ketik,100);
+    }
+    if(i==text.length){
+    
+    }
+  }
+  
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 100) {
+       heartArr[0].remove()
+    }
+},100);
+</script>
+</body>
+</html>
